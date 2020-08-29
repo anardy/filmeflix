@@ -22,7 +22,7 @@ O que o script faz?
 
 1. Compilação e geração de pacote `jar` da aplicação Java através do Maven
 2. Criação da imagem docker com o pacote `jar` gerado anteriormente
-3. Sobe a stack através **docker-compose** com a aplicação Java mais banco de dados
+3. Sobe a stack através `docker-compose` com a aplicação Java mais banco de dados
 4. Validação se a aplicação está no ar 
 
 Já para destruir a stack, basta executar o comando `./destruir-stack.sh`
