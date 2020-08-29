@@ -1,0 +1,1 @@
+INSERT INTO USUARIO(usuario, senha) VALUES('filmeflix', '$2a$10$MM.Mjox6Iak8DGkRIkLRxOJJHqbkbHGK/pYYU5FjDKQJrgfBcQHe6');

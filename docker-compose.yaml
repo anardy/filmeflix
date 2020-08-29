@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: filmeflix_db
+    networks:
+      - filmeflix-net
+
+  backend:
+    image: anardy/filmeflix:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - filmeflix-net
+
+networks:
+  filmeflix-net:
+    driver: bridge
