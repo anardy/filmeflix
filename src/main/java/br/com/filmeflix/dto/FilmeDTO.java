@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import br.com.filmeflix.model.Filme;
+import lombok.Getter;
 
+@Getter
 public class FilmeDTO {
 	
 	private String nome;
@@ -18,22 +20,6 @@ public class FilmeDTO {
 		this.genero = filme.getGenero();
 		this.duracao = filme.getDuracao();
 		this.dataLancamento = filme.getDataLancamento();
-	}
-	
-	public String getNome() {
-		return nome;
-	}
-
-	public String getGenero() {
-		return genero;
-	}
-
-	public Integer getDuracao() {
-		return duracao;
-	}
-
-	public LocalDate getDataLancamento() {
-		return dataLancamento;
 	}
 
 	public static List<FilmeDTO> converter(List<Filme> filmes) {
