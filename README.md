@@ -10,7 +10,7 @@
 * [JWT](https://jwt.io/)
 * [Apache Maven](https://maven.apache.org/)
 
-### Desenho Arquitetural da Solucação
+### Desenho Arquitetural da Solução
 
 ![diagram](img/arquitetura.png)
 
